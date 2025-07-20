@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COSMIC Terminal Interface</title>
+  <link rel="stylesheet" href="cosmic-terminal.css">
+</head>
+<body>
+  <canvas id="stars-bg"></canvas>
+  <div class="main-content">
+    <div class="boot-container" id="boot-container">
+      <pre class="ascii-art">
+
+        ███╗   ██╗███████╗██████╗ ██╗   ██╗██╗      █████╗     
+        ████╗  ██║██╔════╝██╔══██╗██║   ██║██║     ██╔══██╗    
+        ██╔██╗ ██║█████╗  ██████╔╝██║   ██║██║     ███████║    
+        ██║╚██╗██║██╔══╝  ██╔══██╗██║   ██║██║     ██╔══██║    
+        ██║ ╚████║███████╗██████╔╝╚██████╔╝███████╗██║  ██║    
+        ╚═╝  ╚═══╝╚══════╝╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝    
+        ███╗   ██╗███████╗██╗  ██╗██╗   ██╗███████╗            
+        ████╗  ██║██╔════╝╚██╗██╔╝██║   ██║██╔════╝            
+        ██╔██╗ ██║█████╗   ╚███╔╝ ██║   ██║███████╗            
+        ██║╚██╗██║██╔══╝   ██╔██╗ ██║   ██║╚════██║            
+        ██║ ╚████║███████╗██╔╝ ██╗╚██████╔╝███████║            
+        ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝            
+                                                               
+        
+    </pre>
+    <div class="boot-messages" id="boot-messages"></div>
+    <button class="continue-btn" id="continue-btn">Continue</button>
+  </div>
+
+  <div class="terminal" id="terminal" style="display:none;">
+    <div class="terminal-header cosmic-glow">COSMIC TERMINAL</div>
+    <div class="command-list" id="command-list">
+      <pre style="font-size:0.95em; color:#00ffe7; text-align:center; white-space:pre; line-height:1.1; text-shadow:0 0 8px #00ffe7,0 0 16px #00ffe7; margin:0;">
+
+        ███╗   ██╗███████╗██████╗ ██╗   ██╗██╗      █████╗     
+        ████╗  ██║██╔════╝██╔══██╗██║   ██║██║     ██╔══██╗    
+        ██╔██╗ ██║█████╗  ██████╔╝██║   ██║██║     ███████║    
+        ██║╚██╗██║██╔══╝  ██╔══██╗██║   ██║██║     ██╔══██║    
+        ██║ ╚████║███████╗██████╔╝╚██████╔╝███████╗██║  ██║    
+        ╚═╝  ╚═══╝╚══════╝╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝    
+        ███╗   ██╗███████╗██╗  ██╗██╗   ██╗███████╗            
+        ████╗  ██║██╔════╝╚██╗██╔╝██║   ██║██╔════╝            
+        ██╔██╗ ██║█████╗   ╚███╔╝ ██║   ██║███████╗            
+        ██║╚██╗██║██╔══╝   ██╔██╗ ██║   ██║╚════██║            
+        ██║ ╚████║███████╗██╔╝ ██╗╚██████╔╝███████║            
+        ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝            
+                                                               
+        
+      Welcome to Nebula Nexus Terminal
+      Type 'command' to get started!
+      </pre>
+    </div>
+    <div class="terminal-output" id="terminal-output"></div>
+    <form class="terminal-input-area" id="terminal-form" autocomplete="off">
+      <span class="prompt cosmic-glow">&gt   $</span>
+      <input type="text" class="terminal-input" id="terminal-input" autofocus spellcheck="false" autocomplete="off" />
+    </form>
+  </div>
+  </div>
+  <script src="cosmic-terminal.js"></script>
+  <div class="disclaimer-text">Disclaimer: Links to ISRO and government websites are for reference only. All rights remain with the respective owners</div>
+</body>
+</html> 
