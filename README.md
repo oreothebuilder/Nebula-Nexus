@@ -7,7 +7,7 @@ To run the project locally:
 1. Clone the repository by typing the following in the terminal:
 
     ```bash
-    [git clone https://github.com/bishwathakur/Portfolio-v0.git](https://github.com/oreothebuilder/Nebula-Nexus.git)
+    (https://github.com/oreothebuilder/Nebula-Nexus.git)](https://github.com/oreothebuilder/Nebula-Nexus.git)
     cd portfolio
     ```
 2. Open with live server
